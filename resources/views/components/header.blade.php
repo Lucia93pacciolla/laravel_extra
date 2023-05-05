@@ -1,0 +1,1 @@
+<h1 class="text-center text-warning display-1 fw-bold p-5 bg-primary">{{$header}}</h1>
