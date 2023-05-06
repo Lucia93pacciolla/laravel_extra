@@ -25,6 +25,11 @@
                         <label for="review" class="form-label">Recensione</label>
                         <textarea name="review" id="descpription" cols="30" rows="7" class="form-control">{{old('review')}}</textarea>
                     </div>
+                    <div class="mb-3">
+                        <label for="cover" class="form-label">Inserisci immagine</label>
+                        <input type="file" name="cover" class="form-control" id="cover">
+                    </div>
+                    
 
                     <button type="submit" class="btn btn-primary">Inserisci Gioco</button>
                   </form>

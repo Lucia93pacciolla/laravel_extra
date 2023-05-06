@@ -15,7 +15,8 @@ class Game extends Model
         'title',
         'producer',
         'year',
-        'review'
+        'review',
+        'cover'
 
     ];
 }

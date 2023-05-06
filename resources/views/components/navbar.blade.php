@@ -13,7 +13,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link @if(Route::is('game.create')) active @endif" href="{{route('game.create')}}">Aggiungi un gioco</a>
-          </li
+          </li>
+          <li class="nav-item">
+            <a class="nav-link @if(Route::is('index')) active @endif" aria-current="page" href="{{route('index')}}">Lista giochi</a>
+          </li>
           </ul>
       </div>
     </div>

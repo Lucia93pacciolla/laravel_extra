@@ -16,9 +16,16 @@ class GameController extends Controller
             'title'=>$request->title,
             'producer'=>$request->producer,
             'year'=>$request->year,
-            'review'=>$request->review
+            'review'=>$request->review,
+            'cover'=>$request->file('cover')->store('public/covers')
         ]);
 
         return redirect(route('homepage'))->with('gameCreated',' Hai inserito il tuo gioco');
+    }
+
+    public function index(){
+        $games = Game::all();
+
+        return view('game.index',compact('games'));
     }
 }
